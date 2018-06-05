@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">抖漫</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="login_accout">请输入登录账号</string>
+    <string name="login_accout_code">请输入短信验证码</string>
+    <string name="login_password">请输入密码</string>
+    <string name="dm_login_login">登录</string>
+
+    <string name="title_register">注册</string>
+    <string name="title_login">登录</string>
+    <string name="title_find_pws">找回密码</string>
+    <string name="title_home">首页</string>
+    <string name="title_community">社区圈</string>
+    <string name="title_books">书架</string>
+    <string name="sub_title_books">编辑</string>
+    <string name="setting_title">设置</string>
+    <string name="attention_title">我的关注</string>
+    <string name="mine_read_coupon_title">我的阅读券</string>
+    <string name="mine_author_title">成为作者</string>
+    <string name="mine_author_sub_title">提交审核</string>
+    <string name="mine_feed_back_title">反馈</string>
+</resources>

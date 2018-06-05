@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/dp5"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_height="wrap_content">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_height="wrap_content">
+        <com.gcssloop.widget.RCImageView
+            android:layout_width="60dp"
+            app:round_as_circle="true"
+            app:clip_background="true"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp20"
+            android:id="@+id/item_dm_community_list_img"
+            android:layout_height="60dp" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="14sp"
+            android:gravity="center_vertical"
+            android:layout_alignTop="@+id/item_dm_community_list_img"
+            android:layout_alignBottom="@+id/item_dm_community_list_img"
+            android:layout_toRightOf="@+id/item_dm_community_list_img"
+            android:id="@+id/item_dm_community_list_nickname"
+            android:layout_toLeftOf="@+id/item_dm_community_list_love"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="关注"
+            android:gravity="center_vertical"
+            android:layout_alignTop="@+id/item_dm_community_list_img"
+            android:layout_alignBottom="@+id/item_dm_community_list_img"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp20"
+            android:id="@+id/item_dm_community_list_love"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="关注一下最近的内容"
+            android:layout_alignLeft="@+id/item_dm_community_list_img"
+            android:layout_below="@+id/item_dm_community_list_img"
+            android:id="@+id/item_dm_community_list_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/dp20"
+            android:id="@+id/item_dm_community_list_recycler_view"
+            android:layout_below="@+id/item_dm_community_list_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp10"
+            android:orientation="horizontal"
+            android:layout_below="@+id/item_dm_community_list_recycler_view"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="21小时前"
+                android:layout_weight="1"
+                android:id="@+id/item_dm_community_list_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="2315"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:drawableLeft="@drawable/pic_community_prove_on"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:id="@+id/item_dm_community_list_prove"
+                android:drawablePadding="@dimen/dp5"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="231"
+                android:gravity="center_vertical"
+                android:drawablePadding="@dimen/dp5"
+                android:drawableLeft="@drawable/pic_community_talk_on"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_width="wrap_content"
+                android:id="@+id/item_dm_community_list_comment"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp5"
+    android:background="@color/text_color_white"
+    android:padding="@dimen/dp10">
+
+
+    <TextView
+        android:id="@+id/item_dm_feed_back_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color"
+        android:textSize="15sp"
+        android:text="反馈内容:" />
+
+    <TextView
+        android:id="@+id/item_dm_feed_back_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_below="@+id/item_dm_feed_back_flag"
+        android:text="有些内容打不开" />
+
+    <TextView
+        android:id="@+id/item_dm_feed_back_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="11sp"
+        android:layout_below="@+id/item_dm_feed_back_content"
+        android:text="2018-06-12" />
+
+</RelativeLayout>

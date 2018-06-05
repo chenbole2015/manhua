@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp10"
+    android:layout_marginTop="@dimen/dp5"
+    android:background="@color/text_color_white"
+    android:id="@+id/mine_read_coupon_root"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="@dimen/dp5"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_mine_read_info"
+        android:text="消费一张优惠卷 购买了《狮子王》第100话" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_mine_read_time"
+        android:text="2018-06-15 10：12" />
+
+</LinearLayout>

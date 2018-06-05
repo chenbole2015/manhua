@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/text_color_white"
+    android:id="@+id/item_dm_mine_menu_root"
+    android:layout_height="50dp">
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:id="@+id/item_dm_flag_img"
+        android:layout_height="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="14sp"
+        android:text="dd"
+        android:layout_centerVertical="true"
+        android:textColor="@color/text_color"
+        android:layout_toRightOf="@+id/item_dm_flag_img"
+        android:id="@+id/item_dm_flag_text"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/pic_dm_arrow"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_height="20dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/text_color"
+        android:layout_height="1px"/>
+</RelativeLayout>

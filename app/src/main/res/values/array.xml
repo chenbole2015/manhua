@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mineMenu">
+        <item>成为作者</item>
+        <item>成为VIP会员</item>
+        <item>我的消息</item>
+        <item>我的关注</item>
+        <item>意见反馈</item>
+        <item>我的设置</item>
+    </string-array>
+
+    <integer-array name="mineMenuIcon">
+        <item>@drawable/we_chat</item>
+        <item>@drawable/we_chat</item>
+        <item>@drawable/we_chat</item>
+        <item>@drawable/we_chat</item>
+        <item>@drawable/we_chat</item>
+        <item>@drawable/we_chat</item>
+    </integer-array>
+
+    <string-array name="booksTitle">
+        <item>历史</item>
+        <item>收藏</item>
+    </string-array>
+
+    <string-array name="attentionTitle">
+        <item>作品</item>
+        <item>作者</item>
+    </string-array>
+
+    <string-array name="feedbackTitle">
+        <item>意见反馈</item>
+        <item>反馈信息</item>
+    </string-array>
+
+</resources>

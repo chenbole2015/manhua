@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gn.cartoon.ui.activitys.RegisterActivity">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#00ffff" />
+
+
+    <LinearLayout
+        android:id="@+id/email_login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:drawableLeft="@drawable/we_chat"
+                android:drawablePadding="@dimen/dp10"
+                android:id="@+id/register_acc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp3"
+                android:background="@null"
+                android:hint="@string/login_accout"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:paddingTop="@dimen/dp3"
+                android:singleLine="true"
+                android:textCursorDrawable="@null" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/dp30"
+            android:background="@color/split_color" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:drawableLeft="@drawable/we_chat"
+                android:drawablePadding="@dimen/dp10"
+                android:id="@+id/register_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp3"
+                android:background="@null"
+                android:hint="@string/login_accout_code"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:maxLength="4"
+                android:paddingTop="@dimen/dp3"
+                android:singleLine="true"
+                android:textCursorDrawable="@null" />
+            <TextView
+               android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:text="获取验证码"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/dp30"
+            android:background="@color/split_color" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20">
+
+            <AutoCompleteTextView
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp3"
+                android:background="@null"
+                android:hint="@string/login_password"
+                android:drawableLeft="@drawable/we_chat"
+                android:drawablePadding="@dimen/dp10"
+                android:imeActionId="6"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:paddingTop="@dimen/dp3"
+                android:singleLine="true"
+                android:textCursorDrawable="@null" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/dp30"
+            android:background="@color/split_color" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="注册协议" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="已有账号"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/dm_register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/base_title_bg"
+            android:text="@string/title_register"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

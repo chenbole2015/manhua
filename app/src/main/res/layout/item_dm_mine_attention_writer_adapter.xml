@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="4dp">
+
+    <LinearLayout
+        android:id="@+id/item_dm_mine_attention_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10"
+        android:background="@color/text_color_white"
+        android:orientation="horizontal">
+
+        <com.gcssloop.widget.RCImageView
+            android:id="@+id/item_dm_mine_attention_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:round_as_circle="true"
+            android:scaleType="centerCrop"
+            android:padding="@dimen/dp3"
+            android:layout_marginRight="@dimen/dp5"
+             />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/item_dm_mine_attention_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp3"
+                android:layout_toLeftOf="@+id/item_dm_books_his_logo"
+                android:layout_toRightOf="@+id/item_dm_books_his_img"
+                android:ellipsize="end"
+                android:lines="1"
+                android:singleLine="true"
+                android:textSize="14sp"
+                tools:text="一人之上" />
+
+            <TextView
+                android:id="@+id/item_dm_mine_attention_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp3"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:lines="1"
+                android:singleLine="true"
+                android:textSize="12sp"
+                tools:text="一人之上" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="已关注"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>
