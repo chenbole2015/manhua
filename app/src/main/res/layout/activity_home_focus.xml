@@ -1,9 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
     tools:context="com.gn.cartoon.ui.activitys.HomeFocusActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="@color/base_title_bg"
+        android:layout_height="40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp20"
+            android:background="@drawable/selector_home_focus_bg"
+            android:paddingRight="@dimen/dp10"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingTop="@dimen/dp3"
+            android:id="@+id/home_focus_one"
+            android:paddingBottom="@dimen/dp3"
+            android:textColor="@drawable/selector_home_focus_text_color_bg"
+            android:textSize="25sp"
+            android:text="看点" />
+
+        <TextView
+            android:background="@drawable/selector_home_focus_bg"
+            android:paddingRight="@dimen/dp10"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingTop="@dimen/dp3"
+            android:paddingBottom="@dimen/dp3"
+            android:textSize="25sp"
+            android:id="@+id/home_focus_two"
+            android:textColor="@drawable/selector_home_focus_text_color_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热门" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/home_focus_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

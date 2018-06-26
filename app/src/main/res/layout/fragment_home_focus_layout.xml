@@ -4,14 +4,23 @@
     android:layout_height="match_parent"
     android:background="@android:color/white"
     android:fitsSystemWindows="true"
-    android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context="com.gn.cartoon.ui.activitys.LoginActivity">
 
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:textSize="15sp"
+          android:layout_margin="@dimen/dp10"
+          android:lineSpacingExtra="@dimen/dp5"
+          android:background="@android:color/white"
+          android:text="看点最新时间\n2018年06月01日"
+          android:layout_height="wrap_content" />
+
       <android.support.v7.widget.RecyclerView
           android:layout_width="match_parent"
-          android:id="@+id/community_list_recycler_view"
-          android:background="@color/split_color"
+          android:background="@android:color/white"
+          android:id="@+id/home_focus_list_recycler_view"
           android:layout_height="wrap_content"/>
 
 </LinearLayout>

@@ -6,7 +6,11 @@
 
 
     <color name="text_color">#000000</color>
+    <color name="text_color_red">#f90505</color>
+    <color name="text_color_flag">#797878</color>
     <color name="text_color_white">@android:color/white</color>
     <color name="split_color">#F0F0F0</color>
     <color name="base_title_bg">#3DA9F1</color>
+    <color name="base_greed_bg">#05fc00</color>
+    <color name="base_yello_bg">#ff9900</color>
 </resources>

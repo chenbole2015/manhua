@@ -33,4 +33,20 @@
         <item>反馈信息</item>
     </string-array>
 
+    <string-array name="mineMessageTitle">
+        <item>其他通知</item>
+        <item>系统通知</item>
+        <item>评论</item>
+    </string-array>
+
+    <string-array name="payRecordTitle">
+        <item>充值记录</item>
+        <item>消费记录</item>
+    </string-array>
+
+    <string-array name="minePayTitle">
+        <item>微信</item>
+        <item>支付宝</item>
+    </string-array>
+
 </resources>

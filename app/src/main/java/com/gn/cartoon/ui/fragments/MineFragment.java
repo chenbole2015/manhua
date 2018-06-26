@@ -14,8 +14,12 @@ import com.gn.cartoon.bean.MineMeanBean;
 import com.gn.cartoon.ui.activitys.AttentionActivity;
 import com.gn.cartoon.ui.activitys.MineAuthorActivity;
 import com.gn.cartoon.ui.activitys.MineFeedBackActivity;
+import com.gn.cartoon.ui.activitys.MineMessageActivity;
 import com.gn.cartoon.ui.activitys.MineReadCouponActivity;
+import com.gn.cartoon.ui.activitys.MineUserActivity;
+import com.gn.cartoon.ui.activitys.MineVipActivity;
 import com.gn.cartoon.ui.activitys.SettingActivity;
+import com.gn.cartoon.ui.dialogs.MineSignByDayDialog;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -59,15 +63,26 @@ public class MineFragment extends BaseFragment implements BaseQuickAdapter
         mRecyclerView.setAdapter(mMineMenuAdapter);
     }
 
-    @OnClick({R.id.mine_read_coupon, R.id.mine_read_money, R.id.mine_read_mouth})
+    @OnClick({R.id.mine_read_coupon, R.id.mine_read_money, R.id.mine_read_mouth, R.id.dm_mine_give,
+            R.id.dm_mine_head_img})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.mine_read_coupon: //阅读券
                 startActivity(new Intent(mContext, MineReadCouponActivity.class));
                 break;
-            case R.id.mine_read_money: //看漫币
+            case R.id.mine_read_money:
+                //看漫币
                 break;
-            case R.id.mine_read_mouth: //月票
+            case R.id.mine_read_mouth:
+                //月票
+                break;
+            case R.id.dm_mine_give:
+                //签到
+                new MineSignByDayDialog(mContext).show();
+                break;
+            case R.id.dm_mine_head_img:
+                //用户中心
+                startActivity(new Intent(mContext, MineUserActivity.class));
                 break;
         }
     }
@@ -84,8 +99,10 @@ public class MineFragment extends BaseFragment implements BaseQuickAdapter
                 startActivity(new Intent(mContext, MineAuthorActivity.class));
                 break;
             case 1:  //成为vip会员
+                startActivity(new Intent(mContext,MineVipActivity.class));
                 break;
             case 2: //我的消息
+                startActivity(new Intent(mContext,MineMessageActivity.class));
                 break;
             case 3: //我的关注
                 startActivity(new Intent(mContext, AttentionActivity.class));

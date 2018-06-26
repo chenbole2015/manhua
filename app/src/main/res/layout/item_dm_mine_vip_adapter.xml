@@ -1,6 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp5"
+    android:id="@+id/item_mine_vip_root"
+    android:background="@color/text_color_white">
 
-</android.support.constraint.ConstraintLayout>
+
+
+    <RelativeLayout
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:id="@+id/item_mine_vip_rl"
+        android:background="@drawable/selector_mine_vip_bg"
+        android:paddingRight="@dimen/dp10"
+        android:paddingTop="15dp"
+        android:paddingBottom="@dimen/dp20"
+        android:paddingLeft="@dimen/dp10">
+
+
+        <TextView
+            android:id="@+id/item_mine_vip_mouth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp5"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/dp3"
+            android:text="1个月\n￥18"
+            android:textStyle="bold"
+            android:textColor="@color/text_color"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/item_mine_vip_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_mine_vip_mouth"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="原价:"
+                android:textColor="@color/text_color_flag"
+                android:textSize="@dimen/sp12" />
+
+
+            <TextView
+                android:id="@+id/item_mine_vip_gp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dp5"
+                android:text="$22"
+                android:textColor="@color/text_color_flag"
+                android:textSize="@dimen/sp12" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_mine_vip_flag"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp5"
+            android:background="@drawable/shape_simple_drec_bg"
+            android:gravity="center"
+            android:padding="@dimen/dp5"
+            android:id="@+id/item_mine_vip_free"
+            android:text="送300看币\n+1张月票"
+            android:textSize="@dimen/sp12" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_dm_mine_vip_hot"
+        android:src="@drawable/pic_mine_vip_item_hot" />
+
+
+    <ImageView
+        android:layout_alignBottom="@+id/item_mine_vip_rl"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="-8dp"
+        android:layout_gravity="bottom"
+        android:id="@+id/item_dm_mine_vip_select"
+        android:layout_alignRight="@+id/item_mine_vip_rl"
+        android:layout_marginRight="-8dp"
+        android:src="@drawable/pic_mine_vip_select_bg" />
+
+</RelativeLayout>

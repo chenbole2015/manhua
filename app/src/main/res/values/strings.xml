@@ -19,4 +19,9 @@
     <string name="mine_author_title">成为作者</string>
     <string name="mine_author_sub_title">提交审核</string>
     <string name="mine_feed_back_title">反馈</string>
+    <string name="mine_user_title">账户信息</string>
+    <string name="mine_vip_title">VIP会员</string>
+    <string name="mine_vip_sub_title">交易明细</string>
+    <string name="mine_pay_finish_title">收银台</string>
+    <string name="mine_message_title">我的消息</string>
 </resources>

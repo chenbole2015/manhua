@@ -1,9 +1,225 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/split_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
     tools:context="com.gn.cartoon.ui.activitys.MineVipActivity">
 
-</android.support.constraint.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff9900"
+        android:id="@+id/mine_vip_bg"
+        android:paddingBottom="@dimen/dp20">
+        <com.gcssloop.widget.RCImageView
+            android:id="@+id/dm_mine_head_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp20"
+            android:background="@mipmap/ic_launcher"
+            app:clip_background="true"
+            app:round_as_circle="true"
+            app:stroke_color="#1d1dba"
+            app:stroke_width="@dimen/dp1" />
+
+        <TextView
+            android:id="@+id/dm_mine_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dm_mine_head_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp5"
+            android:text="今晚打老虎"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dm_mine_give"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dm_mine_nickname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp5"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp2"
+            android:paddingLeft="@dimen/dp5"
+            android:paddingRight="@dimen/dp5"
+            android:paddingTop="@dimen/dp2"
+            android:text="会员特权多，好处多"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/sp11" />
+    </RelativeLayout>
+
+
+
+
+    <ScrollView
+        android:layout_above="@+id/mine_vip_pay_bg"
+        android:layout_below="@+id/mine_vip_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/split_color"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mine_vip_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10"
+            android:background="@color/text_color_white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/text_color_white"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dp5"
+                android:text="支付方式"
+                android:textColor="@color/text_color" />
+            <Spinner
+                android:id="@+id/mine_vip_spinner_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp1"
+            android:background="@color/text_color_white"
+            android:paddingBottom="@dimen/dp2"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10"
+            android:paddingTop="@dimen/dp2">
+            <TextView
+                android:id="@+id/mine_vip_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dp5"
+                android:text="VIP会员"
+                android:textColor="@color/text_color" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#ff9900"
+                android:gravity="center"
+                android:padding="@dimen/dp5"
+                android:text="vip独享：每月赠送300个看币"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/sp12" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/text_color_white"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/dp5"
+                android:drawableTop="@drawable/pic_mine_vip_vip_bg"
+                android:gravity="center"
+                android:text="VIP标志"
+                android:textColor="@color/text_color_flag"
+                android:textSize="@dimen/sp12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/dp5"
+                android:drawableTop="@drawable/pic_mine_vip_free_bg"
+                android:gravity="center"
+                android:text="免费看漫画"
+                android:textColor="@color/text_color_flag"
+                android:textSize="@dimen/sp12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/dp5"
+                android:drawableTop="@drawable/pic_mine_vip_discount_bg"
+                android:gravity="center"
+                android:text="折扣付费章节"
+                android:textColor="@color/text_color_flag"
+                android:textSize="@dimen/sp12" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/mine_vip_pay_bg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/text_color_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/dp10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="实付 ￥5元"
+            android:id="@+id/mine_vip_pay_total"
+            android:textColor="@color/text_color" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="#ff9900"
+            android:id="@+id/mine_vip_pay_tv"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/dp10"
+            android:paddingBottom="@dimen/dp10"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="@dimen/dp20"
+            android:text="立即支付"
+            android:textColor="@color/text_color_white" />
+    </LinearLayout>
+
+
+</RelativeLayout>

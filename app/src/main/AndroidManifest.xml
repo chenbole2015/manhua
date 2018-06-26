@@ -65,9 +65,26 @@
         <activity
             android:name=".ui.activitys.MineAuthorActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".ui.activitys.MineFeedBackActivity"
+        <activity
+            android:name=".ui.activitys.MineFeedBackActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".ui.activitys.HomeFocusActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activitys.MineUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activitys.MineVipActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activitys.TransactionDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activitys.PayFinishActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.activitys.MineMessageActivity"></activity>
     </application>
 
 </manifest>
